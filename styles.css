@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+}
+
+header {
+    background-color: #008080;
+    padding: 20px;
+    color: aliceblue;
+
+
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+main {
+    min-height: 78vh;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main form {
+    display: flex;
+    justify-content: center;
+}
+
+
+form input[type="text"] {
+    flex-grow: 1;
+
+}
+
+form input[type="text"],
+button[type="submit"],
+.result div a {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #008080;
+    color: #f5f5f5;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #008080;
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+}
+
+.result p {
+    margin-top: 10px;
+
+}
+
+.result {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result p[class="partOfSpeech"] {
+    font-style: italic;
+    color: #808080;
+    margin-top: 2px;
+
+}
+
+.result div a {
+    text-decoration: none;
+    background-color: aqua;
+    color: #f5f5f5;
+}
+
+.result div {
+    margin-top: 20px;
+}
+
+.result li {
+    padding: 3px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:320px) {
+    main form {
+        flex-direction: column;
+
+    }
+
+    button[type="submit"] {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+
+
+}
